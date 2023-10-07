@@ -1,8 +1,10 @@
 // Sample eclipse data, you can replace this with your content
 const eclipseData = [
-    "Eclipse 1 information...",
-    "Eclipse 2 information...",
-    "Eclipse 3 information...",
+    "Slide 1",
+    "Slide 2",
+    "Slide 3",
+    "Slide 4",
+    "Slide 5",
 ];
 
 let currentIndex = 0;

@@ -4,9 +4,27 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: black;
     overflow-x: hidden; /* Hide horizontal scrollbar */
     overflow-y: hidden; /* Hide vertical scrollbar */
 }
+
+.sun {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    z-index: 1;
+}
+.background {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    z-index: 0;
+}
+
+
 
 .card {
     width: 50px; /* Starting width */
@@ -14,7 +32,7 @@ body {
     border: 1px solid #ccc;
     padding: 20px;
     z-index: 1;
-    box-shadow: 0 0 10px rgba(99, 69, 4, 0.3);
+    box-shadow: 0 0 10px rgb(170, 118, 7); /* Base glowing effect*/
     cursor: pointer;
     transition: width 0.5s ease-in-out; /* Add a transition for smooth expansion */
     position: absolute;
@@ -88,13 +106,15 @@ body {
   /* Control the left side */
   .left {
     left: 0;
-    background-color: #d3d16f;
+    color:blueviolet;
+    background-color: rgba(0, 0, 0, 0);
   }
   
   /* Control the right side */
   .right {
     right: 0;
-    background-color: rgb(103, 206, 184);
+    color:blueviolet;
+    background-color: rgba(0, 0, 0, 0);
   }
   
   /* If you want the content centered horizontally and vertically */
