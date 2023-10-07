@@ -26,19 +26,14 @@ function showPrev() {
     }
 }
 
-document.querySelector(".card").addEventListener("click", function (event) {
-    // Determine if the click was on the left or right half of the card
-    const clickX = event.clientX - event.target.getBoundingClientRect().left;
-    const cardWidth = event.target.clientWidth;
+// Get the element with class "right" and add a click event listener
+const rightElement = document.querySelector(".right");
+rightElement.addEventListener("click", showNext);
 
-    if (clickX < cardWidth / 2) {
-        // left half
-        showPrev();
-    } else {
-        // right half
-        showNext();
-    }
-});
+// Get the element with class "left" and add a click event listener
+const leftElement = document.querySelector(".left");
+leftElement.addEventListener("click", showPrev);
 
 // Initialize with the first eclipse information
 displayContent(currentIndex);
+
