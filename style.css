@@ -12,9 +12,15 @@ body {
     border: 1px solid #ccc;
     padding: 20px;
     z-index: 1;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.733); /* Add the glowing box-shadow */
     cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Add a transition for smoother effect */
 }
+
+.card:hover {
+    box-shadow: 0 0 20px rgb(129, 3, 3); /* Increase the glow on hover */
+}
+
 
 .content {
     margin-bottom: 10px;
