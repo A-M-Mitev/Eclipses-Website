@@ -33,7 +33,6 @@ body {
     z-index: 1;
     box-shadow: 0 0 5px 3px rgb(175, 164, 0), 
                 0 0 15px 10px rgb(197, 118, 0); /* glowing effect */
-
     cursor: pointer;
     transition: width 0.5s ease-in-out; /* Add a transition for smooth expansion */
     position: absolute;
@@ -143,6 +142,7 @@ body {
     position: fixed;
     z-index: 0;
     top: 0;
+    cursor: default;
     overflow-x: hidden;
     padding-top: 20px;
   }
@@ -150,7 +150,7 @@ body {
   /* Control the left side */
   .left {
     left: 0;
-    color:blueviolet;
+    color: rgb(111, 0, 255);
     background-color: rgba(0, 0, 0, 0);
     display: none; /* Initially hide the "Previous" button */
   }
@@ -158,11 +158,10 @@ body {
   /* Control the right side */
   .right {
     right: 0;
-    color:blueviolet;
+    color: rgb(111, 0, 255);
     background-color: rgba(0, 0, 0, 0);
   }
   
-  /* If you want the content centered horizontally and vertically */
   .centered {
     position: absolute;
     top: 50%;
@@ -186,3 +185,10 @@ body {
     left: 0;
 }
 
+.header-paragraph {
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(111, 0, 255); 
+    top: 0;
+}
