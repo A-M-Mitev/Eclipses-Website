@@ -47,6 +47,17 @@ function showNext() {
             appearRightCard(); // Trigger the animation after disappearLeft
         });
     }
+    // Hide the "Next" button if currentIndex reaches arrayLength - 1
+    if (currentIndex === arrayLength - 1) {
+        document.querySelector(".right").style.display = "none";
+    }
+    // Show the "Previous" button when moving forward
+    if (currentIndex > 0) {
+        document.querySelector(".left").style.display = "block";
+    } else {
+        // Hide the "Previous" button if currentIndex is 0
+        document.querySelector(".left").style.display = "none";
+    }
 }
 
 function showPrev() {
@@ -56,6 +67,15 @@ function showPrev() {
             displayContent(currentIndex);
             appearLeftCard(); // Trigger the animation after disappearRight
         });
+    }
+     // Hide the "Previous" button if currentIndex is 0
+     if (currentIndex === 0) {
+        document.querySelector(".left").style.display = "none";
+    }
+
+    // Show the "Next" button when moving backward
+    if (currentIndex < arrayLength - 1) {
+        document.querySelector(".right").style.display = "block";
     }
 }
 

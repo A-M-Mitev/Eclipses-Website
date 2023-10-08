@@ -152,6 +152,7 @@ body {
     left: 0;
     color:blueviolet;
     background-color: rgba(0, 0, 0, 0);
+    display: none; /* Initially hide the "Previous" button */
   }
   
   /* Control the right side */
